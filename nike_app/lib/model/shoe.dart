@@ -5,13 +5,13 @@ class Aspect {
 }
 
 class Shoe {
-  final String name, imageUrl, breed, address, description;
+  final String type, imageUrl, name, address, description;
   final List<Aspect> aspects;
 
   const Shoe({
-    required this.name,
+    required this.type,
     required this.imageUrl,
-    required this.breed,
+    required this.name,
     required this.address,
     required this.description,
     this.aspects = const [],

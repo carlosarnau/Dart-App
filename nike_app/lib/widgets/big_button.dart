@@ -10,10 +10,10 @@ class BigButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        height: 65,
-        width: 170,
+        height: 53,
+        width: 150,
         decoration: const BoxDecoration(
-          color: Color.fromARGB(255, 246, 246, 246),
+          color: Color.fromARGB(255, 255, 255, 255),
           borderRadius: BorderRadius.all(
             Radius.circular(5),
           ),
@@ -22,7 +22,7 @@ class BigButton extends StatelessWidget {
           child: Text(
             text,
             style: const TextStyle(
-              fontSize: 20,
+              fontSize: 15,
               fontWeight: FontWeight.w700,
             ),
           ),

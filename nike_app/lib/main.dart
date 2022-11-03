@@ -14,9 +14,9 @@ class NikeApp extends StatelessWidget {
     return MaterialApp(
       home: ShoeScreen(
         shoe: Shoe(
-          name: "Shoe",
+          type: "Sneakers",
           imageUrl: 'https://files.pauek.info/flutter/pet.jpg',
-          breed: "Dachshund",
+          name: "NIKE AIR MAX",
           address: "Tompkins Country SPCA",
           description: "Marly is very friendly, tolerant attitude makes him a "
               "fabulous family pet, and his intelligence makes him a "
