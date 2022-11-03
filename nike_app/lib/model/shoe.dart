@@ -4,11 +4,11 @@ class Aspect {
   Aspect(this.name, this.percent);
 }
 
-class Pet {
+class Shoe {
   final String name, imageUrl, breed, address, description;
   final List<Aspect> aspects;
 
-  const Pet({
+  const Shoe({
     required this.name,
     required this.imageUrl,
     required this.breed,

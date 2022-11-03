@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class CustomBackButton extends StatelessWidget {
@@ -5,14 +7,16 @@ class CustomBackButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(4),
-        child: Row(
-          children: const [
-            BackButton(color: Colors.white),
-            Text("Back", style: TextStyle(color: Colors.white)),
-          ],
+    return const MaterialApp(
+      home: Scaffold(
+        body: Center(
+          widthFactor: 2.0,
+          heightFactor: 2.0,
+          child: Icon(
+            Icons.arrow_back_rounded,
+            size: 45,
+            color: Colors.red,
+          ),
         ),
       ),
     );

@@ -8,20 +8,23 @@ class BigButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: bigButtonHeight,
-      decoration: BoxDecoration(
-        color: Colors.deepOrange[200]!,
-        borderRadius: const BorderRadius.all(
-          Radius.circular(bigButtonHeight),
+    return Center(
+      child: Container(
+        height: 65,
+        width: 170,
+        decoration: const BoxDecoration(
+          color: Color.fromARGB(255, 246, 246, 246),
+          borderRadius: BorderRadius.all(
+            Radius.circular(5),
+          ),
         ),
-      ),
-      child: Center(
-        child: Text(
-          text,
-          style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
+        child: Center(
+          child: Text(
+            text,
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+            ),
           ),
         ),
       ),

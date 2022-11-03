@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:pet_adoption/model/pet.dart';
-import 'package:pet_adoption/screens/pet_screen.dart';
+import 'package:pet_adoption/model/shoe.dart';
+import 'package:pet_adoption/screens/shoe_screen.dart';
 
 void main() {
-  runApp(const PetAdoptionApp());
+  runApp(const NikeApp());
 }
 
-class PetAdoptionApp extends StatelessWidget {
-  const PetAdoptionApp({super.key});
+class NikeApp extends StatelessWidget {
+  const NikeApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: PetScreen(
-        pet: Pet(
-          name: "Marlie",
+      home: ShoeScreen(
+        shoe: Shoe(
+          name: "Shoe",
           imageUrl: 'https://files.pauek.info/flutter/pet.jpg',
           breed: "Dachshund",
           address: "Tompkins Country SPCA",
