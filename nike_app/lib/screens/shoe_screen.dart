@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:pet_adoption/model/shoe.dart';
-import 'package:pet_adoption/widgets/big_button.dart';
 import 'package:pet_adoption/widgets/bottom_bar.dart';
-import 'package:pet_adoption/widgets/custom_back_button.dart';
+import 'package:pet_adoption/widgets/like_button.dart';
+import 'package:pet_adoption/widgets/share_button.dart';
 import 'package:pet_adoption/widgets/info_section.dart';
+import 'package:pet_adoption/widgets/photo_section.dart';
+import 'package:pet_adoption/widgets/custom_back_button.dart';
 import 'package:provider/provider.dart';
 
 class ShoeScreen extends StatelessWidget {
@@ -25,7 +27,7 @@ class ShoeScreen extends StatelessWidget {
               child: SizedBox(
                 height: photoHeight,
                 width: screenSize.width,
-                // Photo place
+                child: const Images(),
               ),
             ),
             SizedBox(
@@ -43,6 +45,14 @@ class ShoeScreen extends StatelessWidget {
                   ],
                 ),
               ),
+            ),
+            const Align(
+              alignment: Alignment.topRight,
+              child: ShareButton(),
+            ),
+            const Align(
+              alignment: Alignment.topRight,
+              child: LikeButton(),
             ),
             const Align(
               alignment: Alignment.topLeft,

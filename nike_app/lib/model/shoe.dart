@@ -4,11 +4,10 @@ class Number {
 }
 
 class Shoe {
-  final String type, imageUrl, name;
+  final String type, name;
 
   const Shoe({
     required this.type,
-    required this.imageUrl,
     required this.name,
   });
   get aspects => null;

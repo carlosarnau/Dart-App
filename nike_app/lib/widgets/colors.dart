@@ -10,7 +10,7 @@ class ShoeColors extends StatelessWidget {
     return Center(
       child: Row(
         children: [
-          const SizedBox(width: 23),
+          const SizedBox(width: 15),
           Container(
             height: 39,
             decoration: const BoxDecoration(
@@ -24,16 +24,16 @@ class ShoeColors extends StatelessWidget {
                 "Color",
                 style: TextStyle(
                   color: Color.fromARGB(255, 135, 136, 141),
-                  fontSize: 15,
+                  fontSize: 13,
                   fontWeight: FontWeight.w400,
                 ),
               ),
             ),
           ),
-          const SizedBox(width: 34),
+          const SizedBox(width: 38),
           Container(
-            height: 39,
-            width: 39,
+            height: 35,
+            width: 35,
             decoration: const BoxDecoration(
               color: Color.fromARGB(255, 34, 34, 34),
               borderRadius: BorderRadius.all(
@@ -41,10 +41,10 @@ class ShoeColors extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 9),
           Container(
-            height: 39,
-            width: 39,
+            height: 35,
+            width: 35,
             decoration: const BoxDecoration(
               color: Color.fromARGB(255, 255, 106, 110),
               borderRadius: BorderRadius.all(
@@ -52,10 +52,10 @@ class ShoeColors extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 9),
           Container(
-            height: 39,
-            width: 39,
+            height: 35,
+            width: 35,
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(

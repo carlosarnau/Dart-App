@@ -15,7 +15,6 @@ class NikeApp extends StatelessWidget {
       home: ShoeScreen(
         shoe: Shoe(
           type: "Sneakers",
-          imageUrl: 'https://files.pauek.info/flutter/pet.jpg',
           name: "NIKE AIR MAX",
         ),
       ),

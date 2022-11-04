@@ -10,7 +10,7 @@ class SizeNumbers extends StatelessWidget {
     return Center(
       child: Row(
         children: [
-          const SizedBox(width: 23),
+          const SizedBox(width: 15),
           Container(
             height: 39,
             decoration: const BoxDecoration(
@@ -24,16 +24,16 @@ class SizeNumbers extends StatelessWidget {
                 "Size",
                 style: TextStyle(
                   color: Color.fromARGB(255, 135, 136, 141),
-                  fontSize: 15,
+                  fontSize: 13,
                   fontWeight: FontWeight.w400,
                 ),
               ),
             ),
           ),
-          const SizedBox(width: 43),
+          const SizedBox(width: 46),
           Container(
-            height: 39,
-            width: 39,
+            height: 38,
+            width: 38,
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
@@ -55,10 +55,10 @@ class SizeNumbers extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 9),
           Container(
-            height: 39,
-            width: 39,
+            height: 35,
+            width: 35,
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
@@ -80,10 +80,10 @@ class SizeNumbers extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 9),
           Container(
-            height: 39,
-            width: 39,
+            height: 35,
+            width: 35,
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
@@ -105,10 +105,10 @@ class SizeNumbers extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 9),
           Container(
-            height: 39,
-            width: 39,
+            height: 35,
+            width: 35,
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
@@ -129,10 +129,10 @@ class SizeNumbers extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 9),
           Container(
-            height: 39,
-            width: 39,
+            height: 35,
+            width: 35,
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(
