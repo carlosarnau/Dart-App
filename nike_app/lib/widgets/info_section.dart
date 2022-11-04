@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pet_adoption/model/shoe.dart';
-import 'package:pet_adoption/widgets/big_button.dart';
+import 'package:pet_adoption/widgets/sizenumbers.dart';
+import 'package:pet_adoption/widgets/colors.dart';
 import 'package:provider/provider.dart';
 
 const double paddingSize = 24;
@@ -24,10 +25,12 @@ class InfoSection extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              _space(17),
+              _space(5),
               _pad(const _Header()),
-              _space(16),
-              const _AboutSection(),
+              _space(35),
+              const _SizeSection(),
+              _space(20),
+              const _ColorSection(),
             ],
           ),
         ),
@@ -76,7 +79,7 @@ class _Header extends StatelessWidget {
             Text(
               context.watch<Shoe>().name,
               style: const TextStyle(
-                fontSize: 26,
+                fontSize: 27,
                 fontWeight: FontWeight.w800,
               ),
             ),
@@ -87,48 +90,33 @@ class _Header extends StatelessWidget {
   }
 }
 
-class _SectionTitle extends StatelessWidget {
-  final String text;
-  const _SectionTitle({
-    Key? key,
-    required this.text,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: paddingSize),
-      child: Text(
-        text,
-        style: const TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    );
-  }
-}
-
-class _AboutSection extends StatelessWidget {
-  const _AboutSection();
+class _SizeSection extends StatelessWidget {
+  const _SizeSection();
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        const _SectionTitle(text: "About"),
-        const SizedBox(height: 8),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: paddingSize),
-          child: Text(
-            context.watch<Shoe>().description,
-            style: const TextStyle(
-              fontSize: 16,
-              color: Colors.grey,
-              height: 1.3,
-            ),
+      children: const [
+        SingleChildScrollView(
+          child: SizeNumbers(
+            text: '1',
+          ),
+        )
+      ],
+    );
+  }
+}
+
+class _ColorSection extends StatelessWidget {
+  const _ColorSection();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: const [
+        SingleChildScrollView(
+          child: ShoeColors(
+            text: '1',
           ),
         )
       ],

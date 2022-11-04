@@ -1,19 +1,15 @@
-class Aspect {
+class Number {
   final String name;
-  final double percent;
-  Aspect(this.name, this.percent);
+  Number(this.name);
 }
 
 class Shoe {
-  final String type, imageUrl, name, address, description;
-  final List<Aspect> aspects;
+  final String type, imageUrl, name;
 
   const Shoe({
     required this.type,
     required this.imageUrl,
     required this.name,
-    required this.address,
-    required this.description,
-    this.aspects = const [],
   });
+  get aspects => null;
 }

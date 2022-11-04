@@ -1,8 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:pet_adoption/model/shoe.dart';
 import 'package:pet_adoption/widgets/big_button.dart';
+import 'package:pet_adoption/widgets/bottom_bar.dart';
 import 'package:pet_adoption/widgets/custom_back_button.dart';
 import 'package:pet_adoption/widgets/info_section.dart';
 import 'package:provider/provider.dart';
@@ -14,7 +13,7 @@ class ShoeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
-    const double photoHeight = 410;
+    const double photoHeight = 400;
     return Provider.value(
       value: shoe,
       child: Scaffold(
@@ -49,13 +48,10 @@ class ShoeScreen extends StatelessWidget {
               alignment: Alignment.topLeft,
               child: CustomBackButton(),
             ),
-            Align(
+            const Align(
               alignment: Alignment.bottomCenter,
-              child: Container(
-                color: const Color.fromARGB(255, 35, 38, 47),
-                height: 81,
-                width: screenSize.width,
-                child: const BigButton(text: "Add to Card"),
+              child: BottomBar(
+                text: '1',
               ),
             ),
           ],

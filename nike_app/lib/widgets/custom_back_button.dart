@@ -7,10 +7,10 @@ class CustomBackButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SafeArea(
       child: Padding(
-        padding: EdgeInsets.only(left: 30, top: 50),
+        padding: EdgeInsets.only(left: 30, top: 37),
         child: Icon(
           Icons.arrow_back_rounded,
-          size: 35,
+          size: 33,
           color: Color.fromARGB(255, 35, 38, 47),
         ),
       ),
