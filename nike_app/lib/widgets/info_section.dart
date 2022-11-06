@@ -25,7 +25,7 @@ class InfoSection extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              _space(5),
+              _space(20),
               _pad(const _Header()),
               _space(35),
               const _SizeSection(),

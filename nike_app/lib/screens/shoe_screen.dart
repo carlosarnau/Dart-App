@@ -3,6 +3,7 @@ import 'package:pet_adoption/model/shoe.dart';
 import 'package:pet_adoption/widgets/bottom_bar.dart';
 import 'package:pet_adoption/widgets/like_button.dart';
 import 'package:pet_adoption/widgets/share_button.dart';
+import 'package:pet_adoption/widgets/small_photos1.dart';
 import 'package:pet_adoption/widgets/info_section.dart';
 import 'package:pet_adoption/widgets/photo_section.dart';
 import 'package:pet_adoption/widgets/custom_back_button.dart';
@@ -22,12 +23,11 @@ class ShoeScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         body: Stack(
           children: [
-            Align(
+            const Align(
               alignment: Alignment.topCenter,
               child: SizedBox(
-                height: photoHeight,
-                width: screenSize.width,
-                child: const Images(),
+                height: 560,
+                child: Images(),
               ),
             ),
             SizedBox(
@@ -45,6 +45,10 @@ class ShoeScreen extends StatelessWidget {
                   ],
                 ),
               ),
+            ),
+            const Align(
+              alignment: Alignment.topRight,
+              child: SmallPhotos1(),
             ),
             const Align(
               alignment: Alignment.topRight,

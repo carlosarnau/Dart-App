@@ -9,7 +9,7 @@ class ShareButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SafeArea(
       child: Padding(
-        padding: EdgeInsets.only(right: 75, top: 50),
+        padding: EdgeInsets.only(right: 73, top: 50),
         child: Text(
           "share",
           style: TextStyle(

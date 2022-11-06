@@ -6,8 +6,9 @@ class Images extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Padding(
-        padding: const EdgeInsets.fromLTRB(4, 90, 4, 40),
+        padding: const EdgeInsets.fromLTRB(20, 0, 30, 0),
         child: Image.asset(
           'assets/1.jpg',
         ),
